@@ -1,0 +1,8 @@
+<h1>Editing Book</h1>
+<%= form_with model: @book, url: book_path, method: :patch do |f| %>
+  <h6>Title</h6>
+  <%= f.text_field :title %>
+  <h6>Opinion</h6>
+  <%= f.text_area :body %>
+  <%= f.submit 'Update Book' %>
+<% end %>
